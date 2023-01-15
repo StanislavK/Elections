@@ -102,7 +102,6 @@
 			children = (
 				C46F843C2974789900286FA3 /* iOS */,
 				C46F843D297478F500286FA3 /* macOS */,
-				C46F8433297475BF00286FA3 /* OverallElectionResultsView */,
 				C46F843E297478FE00286FA3 /* Shared */,
 			);
 			path = Screens;
@@ -176,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				C46F8438297477CC00286FA3 /* AppTabNavigation */,
+				C46F8433297475BF00286FA3 /* OverallElectionResultsView */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
