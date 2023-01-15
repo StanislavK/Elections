@@ -50,7 +50,7 @@ For this app, the following endpoint is used: https://www.volby.cz/pls/prez2023/
 
 ```
 
-**Remark:** The XML format for the 2nd round will be slghtly changes (some of the attributes will reference the 2 round (2KOLO) instead of  1st round (1KOLO).
+**Remark:** The XML format for the 2nd round will be slightly changed (some of the attributes will reference the 2nd round (2KOLO) instead of the 1st round (1KOLO)).
 
 
 
@@ -68,4 +68,4 @@ For this app, the following endpoint is used: https://www.volby.cz/pls/prez2023/
 
 
 
-[^1]: Disclaimer: Czech Statistical Office provides data only, it is in no way connected to this application. CZ: Upozornění: Český statistický úřad poskytuje pouze data, s touto aplikací nijak nesouvisí.
+[^1]: Disclaimer: Czech Statistical Office provides data only. It is in no way connected to this application. CZ: Upozornění: Český statistický úřad poskytuje pouze data, s touto aplikací nijak nesouvisí.
