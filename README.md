@@ -1,5 +1,17 @@
+
+<p float="left">
+    <img src="Images/icon.png" width="80" />
+</p>
+
 # Elections/Volby
 **Elections** is a simple app that displays up-to-date live data about the presidential election in the Czech Republic.
+
+> **Note** Below you can see the last available screenshot (wip).
+
+<p fff float="left">
+    <img src="Images/image1.png" width="300" />
+</p>
+
 
 ## Data[^1]
 
