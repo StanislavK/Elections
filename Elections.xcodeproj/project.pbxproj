@@ -11,6 +11,16 @@
 		C408C80529735302007C7805 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408C80429735302007C7805 /* ContentView.swift */; };
 		C408C80729735303007C7805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C408C80629735303007C7805 /* Assets.xcassets */; };
 		C408C80B29735303007C7805 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C408C80A29735303007C7805 /* Preview Assets.xcassets */; };
+		C46F84242974733700286FA3 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84232974733700286FA3 /* Candidate.swift */; };
+		C46F84262974739D00286FA3 /* NodeName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84252974739D00286FA3 /* NodeName.swift */; };
+		C46F8428297473B600286FA3 /* CandidateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F8427297473B600286FA3 /* CandidateKey.swift */; };
+		C46F842A297473EF00286FA3 /* XMLNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F8429297473EF00286FA3 /* XMLNode.swift */; };
+		C46F842C2974744500286FA3 /* MicroDOM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F842B2974744500286FA3 /* MicroDOM.swift */; };
+		C46F842F2974751C00286FA3 /* ElectionResultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F842E2974751C00286FA3 /* ElectionResultsService.swift */; };
+		C46F84312974754E00286FA3 /* ElectionResultsServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84302974754E00286FA3 /* ElectionResultsServiceImpl.swift */; };
+		C46F8435297475D400286FA3 /* OverallElectionResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F8434297475D400286FA3 /* OverallElectionResultsViewModel.swift */; };
+		C46F84372974764B00286FA3 /* OverallElectionResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84362974764B00286FA3 /* OverallElectionResultsView.swift */; };
+		C46F843A2974780800286FA3 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84392974780800286FA3 /* AppTabNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +30,16 @@
 		C408C80629735303007C7805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C408C80829735303007C7805 /* Elections.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Elections.entitlements; sourceTree = "<group>"; };
 		C408C80A29735303007C7805 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C46F84232974733700286FA3 /* Candidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
+		C46F84252974739D00286FA3 /* NodeName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeName.swift; sourceTree = "<group>"; };
+		C46F8427297473B600286FA3 /* CandidateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateKey.swift; sourceTree = "<group>"; };
+		C46F8429297473EF00286FA3 /* XMLNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLNode.swift; sourceTree = "<group>"; };
+		C46F842B2974744500286FA3 /* MicroDOM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicroDOM.swift; sourceTree = "<group>"; };
+		C46F842E2974751C00286FA3 /* ElectionResultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionResultsService.swift; sourceTree = "<group>"; };
+		C46F84302974754E00286FA3 /* ElectionResultsServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectionResultsServiceImpl.swift; sourceTree = "<group>"; };
+		C46F8434297475D400286FA3 /* OverallElectionResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallElectionResultsViewModel.swift; sourceTree = "<group>"; };
+		C46F84362974764B00286FA3 /* OverallElectionResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallElectionResultsView.swift; sourceTree = "<group>"; };
+		C46F84392974780800286FA3 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +73,10 @@
 			isa = PBXGroup;
 			children = (
 				C408C8112973533F007C7805 /* App */,
-				C408C81229735356007C7805 /* Screens */,
+				C46F84222974732200286FA3 /* Model */,
 				C40B8B85297353AA0031FA33 /* Resources */,
+				C408C81229735356007C7805 /* Screens */,
+				C46F8420297472CE00286FA3 /* Services */,
 			);
 			path = Elections;
 			sourceTree = "<group>";
@@ -78,7 +100,10 @@
 		C408C81229735356007C7805 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				C408C80429735302007C7805 /* ContentView.swift */,
+				C46F843C2974789900286FA3 /* iOS */,
+				C46F843D297478F500286FA3 /* macOS */,
+				C46F8433297475BF00286FA3 /* OverallElectionResultsView */,
+				C46F843E297478FE00286FA3 /* Shared */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -91,6 +116,83 @@
 				C408C80929735303007C7805 /* Preview Content */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C46F8420297472CE00286FA3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C46F842D2974750100286FA3 /* API */,
+				C46F8421297472E500286FA3 /* XMLParsing */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C46F8421297472E500286FA3 /* XMLParsing */ = {
+			isa = PBXGroup;
+			children = (
+				C46F84252974739D00286FA3 /* NodeName.swift */,
+				C46F8427297473B600286FA3 /* CandidateKey.swift */,
+				C46F8429297473EF00286FA3 /* XMLNode.swift */,
+				C46F842B2974744500286FA3 /* MicroDOM.swift */,
+			);
+			path = XMLParsing;
+			sourceTree = "<group>";
+		};
+		C46F84222974732200286FA3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C46F84232974733700286FA3 /* Candidate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C46F842D2974750100286FA3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C46F842E2974751C00286FA3 /* ElectionResultsService.swift */,
+				C46F84302974754E00286FA3 /* ElectionResultsServiceImpl.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C46F8433297475BF00286FA3 /* OverallElectionResultsView */ = {
+			isa = PBXGroup;
+			children = (
+				C46F8434297475D400286FA3 /* OverallElectionResultsViewModel.swift */,
+				C46F84362974764B00286FA3 /* OverallElectionResultsView.swift */,
+			);
+			path = OverallElectionResultsView;
+			sourceTree = "<group>";
+		};
+		C46F8438297477CC00286FA3 /* AppTabNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				C46F84392974780800286FA3 /* AppTabNavigation.swift */,
+			);
+			path = AppTabNavigation;
+			sourceTree = "<group>";
+		};
+		C46F843C2974789900286FA3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C46F8438297477CC00286FA3 /* AppTabNavigation */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		C46F843D297478F500286FA3 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		C46F843E297478FE00286FA3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C408C80429735302007C7805 /* ContentView.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,8 +265,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C46F8428297473B600286FA3 /* CandidateKey.swift in Sources */,
+				C46F842A297473EF00286FA3 /* XMLNode.swift in Sources */,
+				C46F84372974764B00286FA3 /* OverallElectionResultsView.swift in Sources */,
+				C46F84262974739D00286FA3 /* NodeName.swift in Sources */,
+				C46F84242974733700286FA3 /* Candidate.swift in Sources */,
+				C46F843A2974780800286FA3 /* AppTabNavigation.swift in Sources */,
+				C46F8435297475D400286FA3 /* OverallElectionResultsViewModel.swift in Sources */,
+				C46F842C2974744500286FA3 /* MicroDOM.swift in Sources */,
+				C46F842F2974751C00286FA3 /* ElectionResultsService.swift in Sources */,
 				C408C80529735302007C7805 /* ContentView.swift in Sources */,
 				C408C80329735302007C7805 /* App.Elections.swift in Sources */,
+				C46F84312974754E00286FA3 /* ElectionResultsServiceImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
