@@ -21,7 +21,13 @@ class MicroDOM: NSObject, XMLParserDelegate {
         return tree
     }
 
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
+    func parser(
+        _ parser: XMLParser,
+        didStartElement elementName: String,
+        namespaceURI: String?,
+        qualifiedName qName: String?,
+        attributes attributeDict: [String: String] = [:]
+    ) {
         let node = XMLNode(tag: elementName, data: "", attributes: attributeDict, childNodes: [])
         stack.append(node)
     }
