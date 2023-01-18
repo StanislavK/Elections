@@ -15,6 +15,7 @@ struct OverallElectionResultsView: View {
                     Text("% \(candidate.votesPercentage)")
                 }
             }
+            .navigationTitle("Overall results")
             .task {
                 await refreshData()
             }
@@ -37,6 +38,8 @@ private extension OverallElectionResultsView {
 
 struct OverallElectionResultsView_Previews: PreviewProvider {
     static var previews: some View {
-        OverallElectionResultsView()
+        NavigationStack {
+            OverallElectionResultsView()
+        }
     }
 }

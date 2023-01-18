@@ -22,6 +22,11 @@
 		C46F84372974764B00286FA3 /* OverallElectionResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84362974764B00286FA3 /* OverallElectionResultsView.swift */; };
 		C46F843A2974780800286FA3 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84392974780800286FA3 /* AppTabNavigation.swift */; };
 		C4F3263329789FCF00CD5BD2 /* elections_results_1st_round.json in Resources */ = {isa = PBXBuildFile; fileRef = C4F3263229789FCF00CD5BD2 /* elections_results_1st_round.json */; };
+		C4F326372978A1C400CD5BD2 /* FirstRoundResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F326362978A1C400CD5BD2 /* FirstRoundResultsView.swift */; };
+		C4F326392978A1DD00CD5BD2 /* FirstRoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F326382978A1DD00CD5BD2 /* FirstRoundViewModel.swift */; };
+		C4F3263B2978A47700CD5BD2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3263A2978A47700CD5BD2 /* Tab.swift */; };
+		C4F3263E2978AB9D00CD5BD2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3263D2978AB9D00CD5BD2 /* SettingsView.swift */; };
+		C4F326402978ABAE00CD5BD2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3263F2978ABAE00CD5BD2 /* SettingsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		C46F84362974764B00286FA3 /* OverallElectionResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallElectionResultsView.swift; sourceTree = "<group>"; };
 		C46F84392974780800286FA3 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
 		C4F3263229789FCF00CD5BD2 /* elections_results_1st_round.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = elections_results_1st_round.json; sourceTree = "<group>"; };
+		C4F326362978A1C400CD5BD2 /* FirstRoundResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRoundResultsView.swift; sourceTree = "<group>"; };
+		C4F326382978A1DD00CD5BD2 /* FirstRoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRoundViewModel.swift; sourceTree = "<group>"; };
+		C4F3263A2978A47700CD5BD2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		C4F3263D2978AB9D00CD5BD2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C4F3263F2978ABAE00CD5BD2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				C46F84392974780800286FA3 /* AppTabNavigation.swift */,
+				C4F3263A2978A47700CD5BD2 /* Tab.swift */,
 			);
 			path = AppTabNavigation;
 			sourceTree = "<group>";
@@ -178,7 +189,9 @@
 			isa = PBXGroup;
 			children = (
 				C46F8438297477CC00286FA3 /* AppTabNavigation */,
+				C4F326342978A16800CD5BD2 /* FirstRoundResultsView */,
 				C46F8433297475BF00286FA3 /* OverallElectionResultsView */,
+				C4F3263C2978AB8600CD5BD2 /* Settings */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -196,6 +209,24 @@
 				C408C80429735302007C7805 /* ContentView.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		C4F326342978A16800CD5BD2 /* FirstRoundResultsView */ = {
+			isa = PBXGroup;
+			children = (
+				C4F326362978A1C400CD5BD2 /* FirstRoundResultsView.swift */,
+				C4F326382978A1DD00CD5BD2 /* FirstRoundViewModel.swift */,
+			);
+			path = FirstRoundResultsView;
+			sourceTree = "<group>";
+		};
+		C4F3263C2978AB8600CD5BD2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C4F3263D2978AB9D00CD5BD2 /* SettingsView.swift */,
+				C4F3263F2978ABAE00CD5BD2 /* SettingsViewModel.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F326392978A1DD00CD5BD2 /* FirstRoundViewModel.swift in Sources */,
 				C46F8428297473B600286FA3 /* CandidateKey.swift in Sources */,
 				C46F842A297473EF00286FA3 /* XMLNode.swift in Sources */,
 				C46F84372974764B00286FA3 /* OverallElectionResultsView.swift in Sources */,
@@ -276,9 +308,13 @@
 				C46F84242974733700286FA3 /* Candidate.swift in Sources */,
 				C46F843A2974780800286FA3 /* AppTabNavigation.swift in Sources */,
 				C46F8435297475D400286FA3 /* OverallElectionResultsViewModel.swift in Sources */,
+				C4F326402978ABAE00CD5BD2 /* SettingsViewModel.swift in Sources */,
 				C46F842C2974744500286FA3 /* MicroDOM.swift in Sources */,
+				C4F3263E2978AB9D00CD5BD2 /* SettingsView.swift in Sources */,
+				C4F326372978A1C400CD5BD2 /* FirstRoundResultsView.swift in Sources */,
 				C46F842F2974751C00286FA3 /* ElectionResultsService.swift in Sources */,
 				C408C80529735302007C7805 /* ContentView.swift in Sources */,
+				C4F3263B2978A47700CD5BD2 /* Tab.swift in Sources */,
 				C408C80329735302007C7805 /* App.Elections.swift in Sources */,
 				C46F84312974754E00286FA3 /* ElectionResultsServiceImpl.swift in Sources */,
 			);

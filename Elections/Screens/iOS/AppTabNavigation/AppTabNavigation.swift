@@ -1,21 +1,18 @@
-//
-//  AppTabNavigation.swift
-//  Elections
-//
-//  Created by Stanislav Kasprik on 15.01.2023.
-//
-
 import SwiftUI
 
 struct AppTabNavigation: View {
+
+    private var availableTabs: [Tab] {
+        [.secondRound, .firstRound, .settings]
+    }
+    
     var body: some View {
         TabView {
-            NavigationStack {
-                OverallElectionResultsView()
-                    .navigationTitle("Overall results")
-            }
-            .tabItem {
-                Label("Overall results", systemImage: "tray.full.fill")
+            ForEach(availableTabs) { tab in
+                tab
+                    .makeTabContentView()
+                    .tag(tab)
+                    .tabItem { tab.label }
             }
         }
     }
