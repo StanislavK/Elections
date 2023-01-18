@@ -1,0 +1,50 @@
+disabled_rules: # rule identifiers to exclude from running
+  - todo
+  - trailing_whitespace
+  - trailing_comma
+  - nesting
+  - inclusive_language
+opt_in_rules: # some rules are only opt-in
+  - empty_count
+  - force_unwrapping
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning
+force_try: warning
+file_length:
+  warning: 400
+line_length:
+  ignores_comments: true
+  warning: 150
+  error: 200
+identifier_name:
+  max_length:
+    warning: 55
+    error: 60
+  min_length:
+    warning: 2
+  excluded:
+    - url
+type_name:
+  max_length:
+    warning: 55
+    error: 60
+  min_length:
+    error: 3
+  excluded:
+    - iPhone
+    - iPad
+type_body_length:
+   warning: 100
+   error: 900
+function_body_length:
+   warning: 50
+   error: 100
+function_parameter_count:
+   warning: 14
+   error: 20
+cyclomatic_complexity:
+   warning: 12
+   error: 20
