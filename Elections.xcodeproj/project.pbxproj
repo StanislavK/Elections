@@ -21,7 +21,8 @@
 		C46F8435297475D400286FA3 /* OverallElectionResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F8434297475D400286FA3 /* OverallElectionResultsViewModel.swift */; };
 		C46F84372974764B00286FA3 /* OverallElectionResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84362974764B00286FA3 /* OverallElectionResultsView.swift */; };
 		C46F843A2974780800286FA3 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84392974780800286FA3 /* AppTabNavigation.swift */; };
-		C4F3263329789FCF00CD5BD2 /* elections_results_1st_round.json in Resources */ = {isa = PBXBuildFile; fileRef = C4F3263229789FCF00CD5BD2 /* elections_results_1st_round.json */; };
+		C4BA126F29858D5500E6936A /* elections_results_2nd_round.xml in Resources */ = {isa = PBXBuildFile; fileRef = C4BA126E29858D5500E6936A /* elections_results_2nd_round.xml */; };
+		C4BA127229858DDE00E6936A /* elections_results_1st_round.xml in Resources */ = {isa = PBXBuildFile; fileRef = C4BA127129858DDE00E6936A /* elections_results_1st_round.xml */; };
 		C4F326372978A1C400CD5BD2 /* FirstRoundResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F326362978A1C400CD5BD2 /* FirstRoundResultsView.swift */; };
 		C4F326392978A1DD00CD5BD2 /* FirstRoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F326382978A1DD00CD5BD2 /* FirstRoundViewModel.swift */; };
 		C4F3263B2978A47700CD5BD2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3263A2978A47700CD5BD2 /* Tab.swift */; };
@@ -46,7 +47,8 @@
 		C46F8434297475D400286FA3 /* OverallElectionResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallElectionResultsViewModel.swift; sourceTree = "<group>"; };
 		C46F84362974764B00286FA3 /* OverallElectionResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverallElectionResultsView.swift; sourceTree = "<group>"; };
 		C46F84392974780800286FA3 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
-		C4F3263229789FCF00CD5BD2 /* elections_results_1st_round.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = elections_results_1st_round.json; sourceTree = "<group>"; };
+		C4BA126E29858D5500E6936A /* elections_results_2nd_round.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = elections_results_2nd_round.xml; sourceTree = "<group>"; };
+		C4BA127129858DDE00E6936A /* elections_results_1st_round.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = elections_results_1st_round.xml; sourceTree = "<group>"; };
 		C4F326362978A1C400CD5BD2 /* FirstRoundResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRoundResultsView.swift; sourceTree = "<group>"; };
 		C4F326382978A1DD00CD5BD2 /* FirstRoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRoundViewModel.swift; sourceTree = "<group>"; };
 		C4F3263A2978A47700CD5BD2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -123,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				C408C80629735303007C7805 /* Assets.xcassets */,
-				C4F3263229789FCF00CD5BD2 /* elections_results_1st_round.json */,
+				C4BA127029858D7300E6936A /* Results */,
 				C408C80829735303007C7805 /* Elections.entitlements */,
 				C408C80929735303007C7805 /* Preview Content */,
 			);
@@ -211,6 +213,15 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		C4BA127029858D7300E6936A /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA126E29858D5500E6936A /* elections_results_2nd_round.xml */,
+				C4BA127129858DDE00E6936A /* elections_results_1st_round.xml */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
 		C4F326342978A16800CD5BD2 /* FirstRoundResultsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,9 +299,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4F3263329789FCF00CD5BD2 /* elections_results_1st_round.json in Resources */,
 				C408C80B29735303007C7805 /* Preview Assets.xcassets in Resources */,
 				C408C80729735303007C7805 /* Assets.xcassets in Resources */,
+				C4BA126F29858D5500E6936A /* elections_results_2nd_round.xml in Resources */,
+				C4BA127229858DDE00E6936A /* elections_results_1st_round.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
