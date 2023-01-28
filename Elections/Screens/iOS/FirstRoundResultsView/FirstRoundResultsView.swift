@@ -2,7 +2,10 @@ import SwiftUI
 
 struct FirstRoundResultsView: View {
     var body: some View {
-        Text("First Round")
+        HStack {
+            AvatarView(.pavel)
+            AvatarView(.babis)
+        }
     }
 }
 

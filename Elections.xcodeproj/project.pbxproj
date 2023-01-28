@@ -23,6 +23,8 @@
 		C46F843A2974780800286FA3 /* AppTabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46F84392974780800286FA3 /* AppTabNavigation.swift */; };
 		C4BA126F29858D5500E6936A /* elections_results_2nd_round.xml in Resources */ = {isa = PBXBuildFile; fileRef = C4BA126E29858D5500E6936A /* elections_results_2nd_round.xml */; };
 		C4BA127229858DDE00E6936A /* elections_results_1st_round.xml in Resources */ = {isa = PBXBuildFile; fileRef = C4BA127129858DDE00E6936A /* elections_results_1st_round.xml */; };
+		C4BA12752985921300E6936A /* Image+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA12742985921300E6936A /* Image+extensions.swift */; };
+		C4BA12782985926200E6936A /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BA12772985926200E6936A /* AvatarView.swift */; };
 		C4F326372978A1C400CD5BD2 /* FirstRoundResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F326362978A1C400CD5BD2 /* FirstRoundResultsView.swift */; };
 		C4F326392978A1DD00CD5BD2 /* FirstRoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F326382978A1DD00CD5BD2 /* FirstRoundViewModel.swift */; };
 		C4F3263B2978A47700CD5BD2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3263A2978A47700CD5BD2 /* Tab.swift */; };
@@ -49,6 +51,8 @@
 		C46F84392974780800286FA3 /* AppTabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabNavigation.swift; sourceTree = "<group>"; };
 		C4BA126E29858D5500E6936A /* elections_results_2nd_round.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = elections_results_2nd_round.xml; sourceTree = "<group>"; };
 		C4BA127129858DDE00E6936A /* elections_results_1st_round.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = elections_results_1st_round.xml; sourceTree = "<group>"; };
+		C4BA12742985921300E6936A /* Image+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+extensions.swift"; sourceTree = "<group>"; };
+		C4BA12772985926200E6936A /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		C4F326362978A1C400CD5BD2 /* FirstRoundResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRoundResultsView.swift; sourceTree = "<group>"; };
 		C4F326382978A1DD00CD5BD2 /* FirstRoundViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRoundViewModel.swift; sourceTree = "<group>"; };
 		C4F3263A2978A47700CD5BD2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -86,7 +90,9 @@
 		C408C80129735302007C7805 /* Elections */ = {
 			isa = PBXGroup;
 			children = (
+				C4BA12762985924B00E6936A /* Views */,
 				C408C8112973533F007C7805 /* App */,
+				C4BA1273298591EA00E6936A /* Extensions */,
 				C46F84222974732200286FA3 /* Model */,
 				C40B8B85297353AA0031FA33 /* Resources */,
 				C408C81229735356007C7805 /* Screens */,
@@ -222,6 +228,22 @@
 			path = Results;
 			sourceTree = "<group>";
 		};
+		C4BA1273298591EA00E6936A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA12742985921300E6936A /* Image+extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C4BA12762985924B00E6936A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4BA12772985926200E6936A /* AvatarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C4F326342978A16800CD5BD2 /* FirstRoundResultsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,10 +360,12 @@
 				C4F326392978A1DD00CD5BD2 /* FirstRoundViewModel.swift in Sources */,
 				C46F8428297473B600286FA3 /* CandidateKey.swift in Sources */,
 				C46F842A297473EF00286FA3 /* XMLNode.swift in Sources */,
+				C4BA12752985921300E6936A /* Image+extensions.swift in Sources */,
 				C46F84372974764B00286FA3 /* OverallElectionResultsView.swift in Sources */,
 				C46F84262974739D00286FA3 /* NodeName.swift in Sources */,
 				C46F84242974733700286FA3 /* Candidate.swift in Sources */,
 				C46F843A2974780800286FA3 /* AppTabNavigation.swift in Sources */,
+				C4BA12782985926200E6936A /* AvatarView.swift in Sources */,
 				C46F8435297475D400286FA3 /* OverallElectionResultsViewModel.swift in Sources */,
 				C4F326402978ABAE00CD5BD2 /* SettingsViewModel.swift in Sources */,
 				C46F842C2974744500286FA3 /* MicroDOM.swift in Sources */,
